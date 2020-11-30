@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Recruitment task | auroracreation</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header_contact">
+        <div>
+          <a href="tel:123-456-7890">
+            <p>
+              <img
+                src="assets/telephone.svg"
+                alt="telephone icon"
+                class="icon"
+              />293 939 098
+            </p>
+          </a>
+          <a href="mailto:kontakt@aurorabox.pl">
+            <p>
+              <img
+                src="assets/email.svg"
+                alt="email icon"
+                class="icon"
+              />kontakt@aurorabox.pl
+            </p>
+          </a>
+        </div>
+        <div>
+          <a href="/login">
+            <p>
+              <img src="assets/lock.svg" alt="lock icon" class="icon" />Zaloguj
+              się
+            </p>
+          </a>
+          <a href="/createAccount">
+            <p>
+              <img
+                src="assets/account.svg"
+                alt="telephone icon"
+                class="icon"
+              />Załóż konto
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="header_main">
+        <a href="/">
+          <img src="assets/AuroraLogo.png" alt="telephone icon" class="logo" />
+        </a>
+        <form action="search">
+          <input
+            class="search"
+            placeholder="Co chcesz kupić?"
+            type="text"
+            name="search"
+            id="search"
+            required
+          />
+        </form>
+        <div class="MobFlex">
+          <div onclick="toggleMobNav()" class="hamb">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="last"></div>
+          </div>
+          <div class="header_busket">
+            <img src="assets/bag.svg" class="header_busket" alt="busket icon" />
+            <div class="numberItems"><p id="nrItems"></p></div>
+          </div>
+        </div>
+      </div>
+      <div id="mobileMenu" class="mobileMenu">
+        <div onclick="toggleMobNav()" class="close">
+          <div class="first"></div>
+          <div class="second"></div>
+        </div>
+        <nav>
+          <div class="header_nav">
+            <a href="/categories">
+              <p>KATEGORIE</p>
+            </a>
+            <a href="/news">
+              <p>NOWOŚCI</p>
+            </a>
+            <a href="/promotions">
+              <p>PROMOCJE</p>
+            </a>
+            <a href="/sale">
+              <p>WYPRZEDAŻE</p>
+            </a>
+            <a href="/season">
+              <p>KOLEKCJE SEZONY</p>
+            </a>
+            <a href="/offer">
+              <p>NASZA OFERTA</p>
+            </a>
+            <a href="/trends">
+              <p>TRENDY 2018</p>
+            </a>
+            <a href="/blog">
+              <p>BLOG</p>
+            </a>
+            <a href="/contact">
+              <p>KONTAKT</p>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <script src="main.js"></script>
+  </body>
+</html>

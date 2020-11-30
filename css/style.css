@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 25px 30px 10px;
+  max-width: 1400px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.header_contact,
+.header_main,
+.header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_contact {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.header_contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_contact div p {
+  margin: 0 15px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_contact .icon {
+  height: 18px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.header_main {
+  padding: 50px 0;
+}
+
+.header_main .logo {
+  height: 80px;
+  width: auto;
+  margin-bottom: 35px;
+}
+
+.header_main .search {
+  border: 0;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 8px 10px;
+  width: 500px;
+  font-size: 18px;
+  outline: none;
+  color: gray;
+}
+
+.header_main .header_busket {
+  height: 65px;
+  width: auto;
+  position: relative;
+}
+
+.header_main .header_busket .numberItems {
+  color: white;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: -8px;
+  right: -4%;
+  background-color: #e9c8cf;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 1050px) {
+  .header_main {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header_main .header_busket {
+    height: 45px;
+    width: auto;
+    position: relative;
+  }
+  .header_main .MobFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header_main .hamb {
+    height: 32px;
+    width: 32px;
+    position: relative;
+  }
+  .header_main .hamb .first,
+  .header_main .hamb .second,
+  .header_main .hamb .last {
+    position: absolute;
+    height: 6px;
+    width: 40px;
+    background-color: black;
+  }
+  .header_main .hamb .first {
+    top: 0;
+    left: 0;
+  }
+  .header_main .hamb .second {
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+  .header_main .hamb .last {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .mobileMenu,
+  .header_contact,
+  .search {
+    display: none;
+  }
+  .active {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+  }
+  .active .header_nav {
+    margin: 80px auto;
+    font-weight: bold;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 18px;
+  }
+  .active .close {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    margin: 25px;
+  }
+  .active .close .first,
+  .active .close .second {
+    position: absolute;
+    height: 8px;
+    width: 40px;
+    background-color: black;
+  }
+  .active .close .first {
+    top: 50%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .active .close .second {
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
